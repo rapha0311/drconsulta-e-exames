@@ -1,0 +1,364 @@
+@media screen and (min-width: 200px) and (max-width:600px) {
+
+    .topo {
+        display: none;
+    }
+
+    #container {
+        overflow-x: hidden;
+    }
+
+    #form_requisicao {
+        width: 38%;
+        height: 50%;
+        margin-left: 61%;
+        padding: 10px;
+        gap: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+    }
+
+    #form_header {
+        display: flex;
+        justify-content: space-between;
+        height: 20%;
+        width: 70%;
+        margin-bottom: -30%;
+    }
+
+    #inputs label {
+        font-size: 10px;
+    }
+
+    #inputs {
+        gap: 1px;
+        font-size: 10px;
+        height: 85%;
+    }
+
+    #form_header .titulo {
+        width: 100%;
+        height: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: -3%;
+
+    }
+
+    #form_header .titulo h1::before {
+        background-color: #fff;
+        height: 1px;
+        bottom: 1px;
+        position: relative;
+    }
+
+    #form_header .titulo h1,
+    #form_header .titulo h2 {
+        font-size: 10px;
+    }
+
+    .input_field {
+        width: 60px;
+    }
+
+    .input_field input {
+        font-size: 10px;
+        height: 10%;
+    }
+
+    .input_field #objetivos {
+        height: 2%;
+    }
+
+    #receber_apresentacao {
+        height: 10%;
+        font-size: 9px;
+        text-align: center;
+        width: 80%;
+    }
+
+    .container_invista {
+        width: 100vw;
+        height: 90vh;
+    }
+
+    .container_invista h2 {
+        font-size: 18px;
+        margin-top: -20%;
+        width: 60%;
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .container_invista .span1 {
+        font-size: 19px;
+        margin-bottom: 3%;
+        text-align: center;
+        line-height: 23px;
+    }
+
+    .container_invista p {
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 3%;
+        width: 49%;
+    }
+
+    .container_invista .span2 {
+        font-size: 14px;
+        width: 50%;
+        padding: 3%;
+        text-align: center;
+        line-height: 18px;
+    }
+
+    .container_vantagens {
+        width: 100%;
+        height: 90vh;
+    }
+
+
+    .container_vantagens .titulo_vantagens h2 {
+        font-size: 32px;
+        margin-top: -100%;
+    }
+
+    .container_vantagens .titulo_vantagens p {
+        font-size: 22px;
+    }
+
+    .container_vantagens .cards_vantagens {
+        width: 45%;
+        height: 75%;
+        gap: 3px;
+    }
+
+    .container_vantagens .cards_vantagens .card {
+        width: 100%;
+        height: 25%;
+        margin-bottom: 1%;
+    }
+
+    .container_vantagens .cards_vantagens .card .imagem_negocio {
+        width: 80%;
+        height: 80%;
+    }
+
+    .container_vantagens .cards_vantagens .card .imagem_consultores {
+        width: 80%;
+        height: 80%;
+    }
+
+    .container_vantagens .cards_vantagens .card .imagem_etapas {
+        width: 80%;
+        height: 80%;
+    }
+
+    .container_vantagens .cards_vantagens .card .imagem_payback {
+        width: 80%;
+        height: 80%;
+    }
+
+    .card .conteudo p {
+        font-size: 10px;
+        height: 80%;
+    }
+
+    .container_negocio .msg h1 {
+        margin-bottom: 5%;
+        font-size: 15px;
+
+    }
+
+    .container_negocio .cards_efeito {
+        width: 45%;
+        height: 75%;
+        gap: 3px;
+    }
+
+    .container_negocio .cards_efeito .card_efeito {
+        width: 100%;
+        height: 25%;
+    }
+
+    .container_negocio .cards_efeito .card_efeito .conteudo_efeito h2 {
+        font-size: 15px;
+        height: 80%;
+    }
+
+    .container_modelos .msg_modelos h1 {
+        font-size: 45px;
+    }
+
+    .container_modelos .msg_modelos h2 {
+        font-size: 33px;
+    }
+
+    .container_modelos .msg_modelos span {
+        font-size: 20px;
+    }
+
+    .container_modelos .msg_modelos p {
+        font-size: 15px;
+    }
+
+    .modelos img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .container_modelos .modelos {
+        width: 80%;
+    }
+
+    .container_modelos .modelos p {
+        font-size: 10px;
+    }
+
+    .container_cartao {
+        width: 100vw;
+        min-height: 100vh;
+        margin-bottom: 10%;
+    }
+
+
+    .container_cartao .msg_cartao {
+        width: 23%;
+        height: 40%;
+        padding: 0;
+        margin-left: -70%;
+    }
+
+    .container_cartao .msg_cartao h2 {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+
+    .container_fliper .cards_fliper {
+        width: 25%;
+        margin-left: -70%;
+        display: flex;
+        height: 250px;
+
+    }
+
+    .cards_fliper .card_fliper {
+        width: 100%;
+        height: 90%;
+    }
+
+    .cards_fliper .card_fliper .card_frente {
+        padding: 5px;
+        text-align: center;
+    }
+
+    .cards_fliper .card_fliper .card_costas h3 {
+        font-size: 12px;
+    }
+
+    .card_fliper .card_frente h2 {
+        font-size: 20px;
+    }
+
+    .card_fliper .card_frente h3 {
+        font-size: 15px;
+    }
+
+    .seja_franqueado {
+        margin-top: 5%;
+        width: 100vw;
+    }
+
+    .seja_franqueado h1 {
+        font-size: 22px;
+        margin-left: -33%;
+    }
+
+    .seja_franqueado a {
+        font-size: 15px;
+        width: 30%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -28%;
+    }
+
+    .container_suporte {
+        height: 1900px;
+    }
+
+    .container_suporte .titulo_suporte {
+        margin-top: -150%;
+    }
+
+    .container_suporte .titulo_suporte h1 {
+        font-size: 46px;
+        text-align: center;
+    }
+
+    .container_suporte .titulo_suporte h2 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .container_suporte .cards_suporte {
+        gap: -10px;
+    }
+
+    .container_suporte .cards_suporte .card {
+        height: 3%;
+        width: 190px;
+        margin-bottom: -20%;
+    }
+
+    .container_suporte .cards_suporte .card h2 {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .container_suporte .cards_suporte .card h3 {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .container_suporte .cards_suporte .card .icone {
+        width: 46px;
+        height: 50px;
+    }
+
+    .container_suporte .cards_suporte .card .icone img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container_video .titulo_video {
+        margin-top: -75%;
+    }
+
+    .container_video .titulo_video .titulo_magico {
+        font-size: 25px;
+        margin-top: 11%;
+        margin-left: -60%;
+    }
+
+    .container_video .titulo_video h2 {
+        font-size: 13px;
+        margin-top: -2%;
+    }
+
+    .sobre .texto {
+        text-align: center;
+        width: 30%;
+        margin-left: -28%;
+    }
+
+    .sobre .texto p {
+        font-size: 20px;
+    }
+}

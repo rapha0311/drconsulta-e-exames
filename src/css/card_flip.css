@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container_fliper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: -8%;
+    margin-bottom: 8%;
+}
+
+.container_fliper .cards_fliper {
+    width: 40%;
+    margin-left: -30%;
+    margin-top: 15%;
+    margin-bottom: -13%;
+    height: 280px;
+    perspective: 750px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_fliper .cards_fliper:hover>.card_fliper {
+    cursor: pointer;
+    transform: rotateY(180deg) rotateZ(180deg);
+}
+
+.cards_fliper .card_fliper:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.cards_fliper .card_fliper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.card_frente,
+.card_costas {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card_frente {
+    background-color: rgb(37, 141, 141);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 0.5rem;
+    color: var(--color-light-50);
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.card_frente h3 {
+    font-size: 18px;
+    margin-top: 1%;
+}
+
+.card_frente span {
+    font-size: 13px;
+}
+
+.card_costas {
+    background-color: #cfcaca;
+    transform: rotateY(180deg) rotateZ(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 1rem;
+    text-align: center;
+    color: #494343;
+    text-shadow: 0 0 0.2em #1a8383;
+}
+
+.card_costas a {
+    background-color: #80c3c3;
+    padding: 10px;
+    border-radius: 20px;
+    color: #4b4b4b;
+    transition: 0.3s;
+}
+
+.card_costas a:hover {
+    background-color: #466c6c;
+    color: var(--color-light-50);
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 2%;
+}
+
+caption {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #3ec59f;
+}
+
+div#container-table {
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}

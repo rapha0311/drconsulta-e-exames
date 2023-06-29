@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+.container_slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    width: 100%;
+    height: 80vh;
+    background: var(--color-light-50);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: background 0.4s ease-in;
+    position: relative;
+    background-color: #ebebeb;
+    font-family: 'Poppins', sans-serif;
+}
+
+.imagens .imagem {
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.8s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.imagem .msg-slider1 {
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-light-50);
+}
+
+.imagem .msg-slider1 h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #cc1100;
+    text-transform: uppercase;
+}
+
+.imagem .msg-slider1 p {
+    color: #505050;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+}
+
+.imagem .msg-slider2 {
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-light-50);
+}
+
+.imagem .msg-slider2 h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #2b79a6;
+    text-transform: uppercase;
+}
+
+.imagem .msg-slider2 p {
+    color: #505050;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+}
+
+.imagem .msg-slider3 {
+    padding: 15px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-light-50);
+}
+
+.imagem .msg-slider3 h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #2b79a6;
+    text-transform: uppercase;
+}
+
+.imagem .msg-slider3 p {
+    color: #505050;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.imagens-slider {
+    width: 100%;
+    height: 100%;
+    max-width: 1920px;
+    max-height: 1200px;
+    overflow: hidden;
+    display: flex;
+    transform-style: preserve-3d;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagens {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+#item-1:checked~.imagens #imagem-3,
+#item-2:checked~.imagens #imagem-1,
+#item-3:checked~.imagens #imagem-2 {
+    transform: translateX(-60%) scale(0.8);
+    transition: 0.4s;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#item-1:checked~.imagens #imagem-2,
+#item-2:checked~.imagens #imagem-3,
+#item-3:checked~.imagens #imagem-1 {
+    transform: translateX(60%) scale(0.8);
+    transition: 0.4s;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#item-1:checked~.imagens #imagem-1,
+#item-2:checked~.imagens #imagem-2,
+#item-3:checked~.imagens #imagem-3 {
+    transform: translateX(0) scale(1);
+    transition: 0.4s;
+    opacity: 1;
+    z-index: 1;
+}
+
+#item-1:checked~.imagens #imagem-2 img,
+#item-2:checked~.imagens #imagem-3 img,
+#item-3:checked~.imagens #imagem-1 img {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+.btn_fixed {
+    bottom: 30px;
+    right: 30px;
+    position: fixed;
+    background-color: #5b8d89;
+    border-radius: 45px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.btn_fixed a {
+    cursor: pointer;
+}
+
+.btn_fixed.visible {
+    visibility: visible;
+}
+
+.btn_fixed img {
+    width: 100%;
+    height: 80%;
+    opacity: 0.8;
+}

@@ -1,0 +1,109 @@
+body {
+    background-color: #fff;
+}
+
+.container_homecare {
+    background: url(../images/homecare.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao {
+    display: flex;
+    margin-left: -44%;
+    margin-top: 6%;
+    flex-direction: column;
+    width: 50%;
+}
+
+.apresentacao .estatico {
+    font-size: 1.5em;
+    color: rgb(71, 71, 71);
+}
+
+.apresentacao .dinamico li {
+    list-style: none;
+    position: relative;
+    border-right: 4px solid;
+    font-size: 37px;
+    width: 11ch;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(14, 133, 133, 0.774);
+    animation: typing 2s steps(20),
+        blinking 0.5s infinite step-end alternate;
+}
+
+.apresentacao .informacao-homecare p {
+    font-size: 18px;
+    width: 80%;
+    margin-top: 2%;
+    color: rgb(71, 71, 71);
+    line-height: 25px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 11ch;
+    }
+}
+
+@keyframes blinking {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.container_sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+    margin-top: 5%;
+    min-height: 320px;
+}
+
+.titulo_sobre {
+    font-size: 25px;
+    color: rgb(42, 196, 144);
+    font-weight: 400;
+}
+
+.sobre {
+    width: 48%;
+    margin-top: 3%;
+    color: rgb(71, 71, 71);
+    font-size: 18px;
+    text-align: justify;
+}
+
+.container_sobre a {
+    display: flex;
+    background-color: rgb(42, 196, 144);
+    width: 15%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    margin-top: 3%;
+    border-radius: 18px;
+    color: #f7f3f3;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container_sobre a:hover {
+    background-color: rgb(53, 75, 67);
+}
